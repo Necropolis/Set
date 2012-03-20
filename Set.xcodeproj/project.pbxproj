@@ -6,14 +6,210 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DAD686A41519301D001D4D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD686921519300F001D4D13 /* Foundation.framework */; };
+		DAD686A71519301D001D4D13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD686A61519301D001D4D13 /* main.m */; };
+		DAD686B51519303A001D4D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD686921519300F001D4D13 /* Foundation.framework */; };
+		DAD686B81519303A001D4D13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD686B71519303A001D4D13 /* main.m */; };
+		DAD686C615193119001D4D13 /* Console.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD686C415193119001D4D13 /* Console.m */; };
+		DAD686C715193120001D4D13 /* ASCIITable.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD686C215193119001D4D13 /* ASCIITable.m */; };
+		DAD686C815193124001D4D13 /* Console.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD686C415193119001D4D13 /* Console.m */; };
+		DAD686CC1519313E001D4D13 /* NSContainers+DebugPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD686CB1519313E001D4D13 /* NSContainers+DebugPrint.m */; };
+		DAD686CD1519313E001D4D13 /* NSContainers+DebugPrint.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD686CB1519313E001D4D13 /* NSContainers+DebugPrint.m */; };
+		DAD686D0151931FB001D4D13 /* Profiler.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD686CF151931FB001D4D13 /* Profiler.m */; };
+		DAD686D3151932A2001D4D13 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD686D2151932A2001D4D13 /* TestObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DAD686A01519301D001D4D13 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		DAD686B11519303A001D4D13 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DAD686921519300F001D4D13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DAD686A21519301D001D4D13 /* NSSet-BehaviorDemonstration */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSSet-BehaviorDemonstration"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD686A61519301D001D4D13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAD686A91519301D001D4D13 /* NSSet-BehaviorDemonstration-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSSet-BehaviorDemonstration-Prefix.pch"; sourceTree = "<group>"; };
+		DAD686B31519303A001D4D13 /* NSSet-PerformanceDemonstration */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSSet-PerformanceDemonstration"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD686B71519303A001D4D13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAD686BA1519303A001D4D13 /* NSSet-PerformanceDemonstration-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSSet-PerformanceDemonstration-Prefix.pch"; sourceTree = "<group>"; };
+		DAD686C115193119001D4D13 /* ASCIITable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASCIITable.h; path = ConsoleUtils/src/ASCIITable.h; sourceTree = "<group>"; };
+		DAD686C215193119001D4D13 /* ASCIITable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASCIITable.m; path = ConsoleUtils/src/ASCIITable.m; sourceTree = "<group>"; };
+		DAD686C315193119001D4D13 /* Console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Console.h; path = ConsoleUtils/src/Console.h; sourceTree = "<group>"; };
+		DAD686C415193119001D4D13 /* Console.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Console.m; path = ConsoleUtils/src/Console.m; sourceTree = "<group>"; };
+		DAD686CA1519313E001D4D13 /* NSContainers+DebugPrint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSContainers+DebugPrint.h"; path = "PrettyPrint/PrettyPrint/NSContainers+DebugPrint.h"; sourceTree = "<group>"; };
+		DAD686CB1519313E001D4D13 /* NSContainers+DebugPrint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSContainers+DebugPrint.m"; path = "PrettyPrint/PrettyPrint/NSContainers+DebugPrint.m"; sourceTree = "<group>"; };
+		DAD686CE151931FB001D4D13 /* Profiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profiler.h; sourceTree = "<group>"; };
+		DAD686CF151931FB001D4D13 /* Profiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profiler.m; sourceTree = "<group>"; };
+		DAD686D1151932A2001D4D13 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		DAD686D2151932A2001D4D13 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		DAD686D41519331F001D4D13 /* WeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeakProxy.h; sourceTree = "<group>"; };
+		DAD686D51519331F001D4D13 /* WeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeakProxy.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAD6869F1519301D001D4D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD686A41519301D001D4D13 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD686B01519303A001D4D13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD686B51519303A001D4D13 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		DAD6868115192FFE001D4D13 = {
 			isa = PBXGroup;
 			children = (
+				DAD686A51519301D001D4D13 /* NSSet-BehaviorDemonstration */,
+				DAD686B61519303A001D4D13 /* NSSet-PerformanceDemonstration */,
+				DAD686C0151930F6001D4D13 /* ConsoleUtils */,
+				DAD686C915193129001D4D13 /* PrettyPrint */,
+				DAD686911519300F001D4D13 /* Frameworks */,
+				DAD6868F1519300F001D4D13 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		DAD6868F1519300F001D4D13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAD686A21519301D001D4D13 /* NSSet-BehaviorDemonstration */,
+				DAD686B31519303A001D4D13 /* NSSet-PerformanceDemonstration */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAD686911519300F001D4D13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAD686921519300F001D4D13 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAD686A51519301D001D4D13 /* NSSet-BehaviorDemonstration */ = {
+			isa = PBXGroup;
+			children = (
+				DAD686A61519301D001D4D13 /* main.m */,
+				DAD686D1151932A2001D4D13 /* TestObject.h */,
+				DAD686D2151932A2001D4D13 /* TestObject.m */,
+				DAD686D41519331F001D4D13 /* WeakProxy.h */,
+				DAD686D51519331F001D4D13 /* WeakProxy.m */,
+				DAD686A81519301D001D4D13 /* Supporting Files */,
+			);
+			path = "NSSet-BehaviorDemonstration";
+			sourceTree = "<group>";
+		};
+		DAD686A81519301D001D4D13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAD686A91519301D001D4D13 /* NSSet-BehaviorDemonstration-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAD686B61519303A001D4D13 /* NSSet-PerformanceDemonstration */ = {
+			isa = PBXGroup;
+			children = (
+				DAD686B71519303A001D4D13 /* main.m */,
+				DAD686CE151931FB001D4D13 /* Profiler.h */,
+				DAD686CF151931FB001D4D13 /* Profiler.m */,
+				DAD686B91519303A001D4D13 /* Supporting Files */,
+			);
+			path = "NSSet-PerformanceDemonstration";
+			sourceTree = "<group>";
+		};
+		DAD686B91519303A001D4D13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAD686BA1519303A001D4D13 /* NSSet-PerformanceDemonstration-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAD686C0151930F6001D4D13 /* ConsoleUtils */ = {
+			isa = PBXGroup;
+			children = (
+				DAD686C315193119001D4D13 /* Console.h */,
+				DAD686C415193119001D4D13 /* Console.m */,
+				DAD686C115193119001D4D13 /* ASCIITable.h */,
+				DAD686C215193119001D4D13 /* ASCIITable.m */,
+			);
+			name = ConsoleUtils;
+			sourceTree = "<group>";
+		};
+		DAD686C915193129001D4D13 /* PrettyPrint */ = {
+			isa = PBXGroup;
+			children = (
+				DAD686CA1519313E001D4D13 /* NSContainers+DebugPrint.h */,
+				DAD686CB1519313E001D4D13 /* NSContainers+DebugPrint.m */,
+			);
+			name = PrettyPrint;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAD686A11519301D001D4D13 /* NSSet-BehaviorDemonstration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD686AC1519301D001D4D13 /* Build configuration list for PBXNativeTarget "NSSet-BehaviorDemonstration" */;
+			buildPhases = (
+				DAD6869E1519301D001D4D13 /* Sources */,
+				DAD6869F1519301D001D4D13 /* Frameworks */,
+				DAD686A01519301D001D4D13 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSSet-BehaviorDemonstration";
+			productName = "NSSet-BehaviorDemonstration";
+			productReference = DAD686A21519301D001D4D13 /* NSSet-BehaviorDemonstration */;
+			productType = "com.apple.product-type.tool";
+		};
+		DAD686B21519303A001D4D13 /* NSSet-PerformanceDemonstration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAD686BD1519303A001D4D13 /* Build configuration list for PBXNativeTarget "NSSet-PerformanceDemonstration" */;
+			buildPhases = (
+				DAD686AF1519303A001D4D13 /* Sources */,
+				DAD686B01519303A001D4D13 /* Frameworks */,
+				DAD686B11519303A001D4D13 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSSet-PerformanceDemonstration";
+			productName = "NSSet-PerformanceDemonstration";
+			productReference = DAD686B31519303A001D4D13 /* NSSet-PerformanceDemonstration */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		DAD6868315192FFE001D4D13 /* Project object */ = {
@@ -30,23 +226,160 @@
 				en,
 			);
 			mainGroup = DAD6868115192FFE001D4D13;
+			productRefGroup = DAD6868F1519300F001D4D13 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				DAD686A11519301D001D4D13 /* NSSet-BehaviorDemonstration */,
+				DAD686B21519303A001D4D13 /* NSSet-PerformanceDemonstration */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAD6869E1519301D001D4D13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD686A71519301D001D4D13 /* main.m in Sources */,
+				DAD686C615193119001D4D13 /* Console.m in Sources */,
+				DAD686CC1519313E001D4D13 /* NSContainers+DebugPrint.m in Sources */,
+				DAD686D3151932A2001D4D13 /* TestObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAD686AF1519303A001D4D13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAD686B81519303A001D4D13 /* main.m in Sources */,
+				DAD686C715193120001D4D13 /* ASCIITable.m in Sources */,
+				DAD686C815193124001D4D13 /* Console.m in Sources */,
+				DAD686CD1519313E001D4D13 /* NSContainers+DebugPrint.m in Sources */,
+				DAD686D0151931FB001D4D13 /* Profiler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		DAD6868815192FFE001D4D13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUGPRINT_ALL;
 			};
 			name = Debug;
 		};
 		DAD6868915192FFE001D4D13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUGPRINT_ALL;
+			};
+			name = Release;
+		};
+		DAD686AD1519301D001D4D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSSet-BehaviorDemonstration/NSSet-BehaviorDemonstration-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DAD686AE1519301D001D4D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSSet-BehaviorDemonstration/NSSet-BehaviorDemonstration-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DAD686BE1519303A001D4D13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSSet-PerformanceDemonstration/NSSet-PerformanceDemonstration-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DAD686BF1519303A001D4D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSSet-PerformanceDemonstration/NSSet-PerformanceDemonstration-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -61,6 +394,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		DAD686AC1519301D001D4D13 /* Build configuration list for PBXNativeTarget "NSSet-BehaviorDemonstration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD686AD1519301D001D4D13 /* Debug */,
+				DAD686AE1519301D001D4D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAD686BD1519303A001D4D13 /* Build configuration list for PBXNativeTarget "NSSet-PerformanceDemonstration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAD686BE1519303A001D4D13 /* Debug */,
+				DAD686BF1519303A001D4D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

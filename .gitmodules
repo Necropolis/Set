@@ -1,0 +1,6 @@
+[submodule "ConsoleUtils"]
+	path = ConsoleUtils
+	url = git@github.com:NSError/ConsoleUtils.git
+[submodule "PrettyPrint"]
+	path = PrettyPrint
+	url = git@github.com:NSError/NSContainers-PrettyPrint.git
