@@ -7,6 +7,7 @@
 //
 
 #import "TestObject.h"
+#import "NSContainers+DebugPrint.h"
 
 @implementation TestObject
 
