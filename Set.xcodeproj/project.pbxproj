@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA15DF15151A704200FC3A16 /* HelpOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = DA15DF14151A704200FC3A16 /* HelpOutput.m */; };
+		DA15DF1A151A7DE700FC3A16 /* ProfileHarness.m in Sources */ = {isa = PBXBuildFile; fileRef = DA15DF19151A7DE700FC3A16 /* ProfileHarness.m */; };
+		DA7ED8EE151D18D400275FB9 /* NSArray+Randomness.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7ED8ED151D18D400275FB9 /* NSArray+Randomness.m */; };
+		DA7ED8F2151D193F00275FB9 /* ASCIITable+Profiler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7ED8F1151D193F00275FB9 /* ASCIITable+Profiler.m */; };
 		DAD686A41519301D001D4D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD686921519300F001D4D13 /* Foundation.framework */; };
 		DAD686A71519301D001D4D13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD686A61519301D001D4D13 /* main.m */; };
 		DAD686B51519303A001D4D13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD686921519300F001D4D13 /* Foundation.framework */; };
@@ -42,6 +46,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA15DF13151A704200FC3A16 /* HelpOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpOutput.h; sourceTree = "<group>"; };
+		DA15DF14151A704200FC3A16 /* HelpOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpOutput.m; sourceTree = "<group>"; };
+		DA15DF17151A706400FC3A16 /* Flags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flags.h; sourceTree = "<group>"; };
+		DA15DF18151A7DE700FC3A16 /* ProfileHarness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileHarness.h; sourceTree = "<group>"; };
+		DA15DF19151A7DE700FC3A16 /* ProfileHarness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileHarness.m; sourceTree = "<group>"; };
+		DA7ED8EC151D18D400275FB9 /* NSArray+Randomness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Randomness.h"; sourceTree = "<group>"; };
+		DA7ED8ED151D18D400275FB9 /* NSArray+Randomness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Randomness.m"; sourceTree = "<group>"; };
+		DA7ED8F0151D193F00275FB9 /* ASCIITable+Profiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ASCIITable+Profiler.h"; sourceTree = "<group>"; };
+		DA7ED8F1151D193F00275FB9 /* ASCIITable+Profiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ASCIITable+Profiler.m"; sourceTree = "<group>"; };
 		DAD686921519300F001D4D13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DAD686A21519301D001D4D13 /* NSSet-BehaviorDemonstration */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "NSSet-BehaviorDemonstration"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD686A61519301D001D4D13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -137,8 +150,17 @@
 			isa = PBXGroup;
 			children = (
 				DAD686B71519303A001D4D13 /* main.m */,
+				DA15DF18151A7DE700FC3A16 /* ProfileHarness.h */,
+				DA15DF19151A7DE700FC3A16 /* ProfileHarness.m */,
 				DAD686CE151931FB001D4D13 /* Profiler.h */,
 				DAD686CF151931FB001D4D13 /* Profiler.m */,
+				DA15DF17151A706400FC3A16 /* Flags.h */,
+				DA15DF13151A704200FC3A16 /* HelpOutput.h */,
+				DA15DF14151A704200FC3A16 /* HelpOutput.m */,
+				DA7ED8EC151D18D400275FB9 /* NSArray+Randomness.h */,
+				DA7ED8ED151D18D400275FB9 /* NSArray+Randomness.m */,
+				DA7ED8F0151D193F00275FB9 /* ASCIITable+Profiler.h */,
+				DA7ED8F1151D193F00275FB9 /* ASCIITable+Profiler.m */,
 				DAD686B91519303A001D4D13 /* Supporting Files */,
 			);
 			path = "NSSet-PerformanceDemonstration";
@@ -257,6 +279,10 @@
 				DAD686C815193124001D4D13 /* Console.m in Sources */,
 				DAD686CD1519313E001D4D13 /* NSContainers+DebugPrint.m in Sources */,
 				DAD686D0151931FB001D4D13 /* Profiler.m in Sources */,
+				DA15DF15151A704200FC3A16 /* HelpOutput.m in Sources */,
+				DA15DF1A151A7DE700FC3A16 /* ProfileHarness.m in Sources */,
+				DA7ED8EE151D18D400275FB9 /* NSArray+Randomness.m in Sources */,
+				DA7ED8F2151D193F00275FB9 /* ASCIITable+Profiler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +428,7 @@
 				DAD686AE1519301D001D4D13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAD686BD1519303A001D4D13 /* Build configuration list for PBXNativeTarget "NSSet-PerformanceDemonstration" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +437,7 @@
 				DAD686BF1519303A001D4D13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,17 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-struct timing_info_t {
-    double mean;
-    double variance;
-    double standard_deviation;
-    double mean_ns;
-    double variance_ns;
-    double standard_deviation_ns;
-};
+@interface TimingInfo : NSObject <NSCoding>
 
-struct timing_info_t TimeBlock(size_t, void(^)());
+@property (assign) double mtu_mean;
+@property (assign) double mtu_variance;
+@property (assign) double mtu_standardDeviation;
 
-NSArray * TimingInfoMTURow(struct timing_info_t);
-NSArray * TimingInfoNSRow(struct timing_info_t);
-void NSMutableStringAppendToLength(NSMutableString *, NSString *, NSUInteger);
+@property (assign) double ns_mean;
+@property (assign) double ns_variance;
+@property (assign) double ns_standardDeviation;
+
+- (NSComparisonResult)compare:(id)object;
+
+@end
+
+TimingInfo * TimeBlock(size_t, void(^)());
