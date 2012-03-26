@@ -15,79 +15,89 @@ Additionally, this random ordering is leveraged in the lookup tests to demonstra
 
 All timings are in nanoseconds.
 
-													Mean                  Variance           Standard Deviation
-		NSMutableArray      unhinted best-case  addition
-			MTU Timings:      4966576.611000          28153706829.345543      167790.663713
-			Nanoseconds:      4966576.611000          28153706829.345543      167790.663713
-		NSMutableSet        unhinted best-case  addition
-		  MTU Timings:     32688034.732000        1181246076931.341309     1086851.451180
-		  Nanoseconds:     32688034.732000        1181246076931.341309     1086851.451180
-		NSMutableOrderedSet unhinted best-case  addition
-			MTU Timings:     49027478.987000        1107627970662.163330     1052439.057933
-			Nanoseconds:     49027478.987000        1107627970662.163330     1052439.057933
-		NSMutableArray      hinted   best-case  addition
-			MTU Timings:      5087746.041000          17873569894.239250      133692.071172
-			Nanoseconds:      5087746.041000          17873569894.239250      133692.071172
-		NSMutableSet        hinted   best-case  addition
-			MTU Timings:     13836751.725000         175507692844.117188      418936.382813
-			Nanoseconds:     13836751.725000         175507692844.117188      418936.382813
-		NSMutableOrderedSet hinted   best-case  addition
-			MTU Timings:     44414997.609000         495266768249.688660      703751.922377
-			Nanoseconds:     44414997.609000         495266768249.688660      703751.922377
-		NSMutableArray      unhinted worst-case addition
-			MTU Timings:      6206868.904000         102202677475.406769      319691.534882
-			Nanoseconds:      6206868.904000         102202677475.406769      319691.534882
-		NSMutableSet        unhinted worst-case addition
-			MTU Timings:     41893191.164000        5320320893917.540039     2306582.080464
-			Nanoseconds:     41893191.164000        5320320893917.540039     2306582.080464
-		NSMutableOrderedSet unhinted worst-case addition
-			MTU Timings:     49753588.486000        4683516544232.943359     2164143.374232
-			Nanoseconds:     49753588.486000        4683516544232.943359     2164143.374232
-		NSMutableArray      hinted   worst-case addition
-			MTU Timings:      6412381.680000         332730195301.001465      576827.699839
-			Nanoseconds:      6412381.680000         332730195301.001465      576827.699839
-		NSMutableSet        hinted   worst-case addition
-			MTU Timings:     15077326.123000         559881051719.116333      748251.997471
-			Nanoseconds:     15077326.123000         559881051719.116333      748251.997471
-		NSMutableOrderedSet hinted   worst-case addition
-			MTU Timings:     48759548.261000         828294120798.635254      910106.653529
-			Nanoseconds:     48759548.261000         828294120798.635254      910106.653529
-		NSArray containsObject: best-case
-			MTU Timings: 139832745284.571442  2139454064901239296.000000  1462687275.155301
-			Nanoseconds: 139832745284.571442  2139454064901239296.000000  1462687275.155301
-		NSSet containsObject: best-case
-			MTU Timings:      5649252.122000        1365940871820.187012     1168734.731160
-			Nanoseconds:      5649252.122000        1365940871820.187012     1168734.731160
-		NSOrderedSet containsObject: best-case
-			MTU Timings:      9292549.384000        2340023262948.531738     1529713.457792
-			Nanoseconds:      9292549.384000        2340023262948.531738     1529713.457792
-		NSArray containsObject: worst-case
-  		MTU Timings: 138898713707.285706  9766367119583033344.000000  3125118736.877534
-	  	Nanoseconds: 138898713707.285706  9766367119583033344.000000  3125118736.877534
-		NSSet containsObject: worst-case
-			MTU Timings:      5200489.963000         237334186555.898193      487169.566533
-			Nanoseconds:      5200489.963000         237334186555.898193      487169.566533
-		NSOrderedSet containsObject: worst-case
-			MTU Timings:      8832241.763000         313431987810.158875      559849.969019
-			Nanoseconds:      8832241.763000         313431987810.158875      559849.969019
-		NSArray indexOfObject: best-case
-			MTU Timings: 139911455159.857147  1618778888379401984.000000  1272312417.757290
-			Nanoseconds: 139911455159.857147  1618778888379401984.000000  1272312417.757290
-		NSSet member: best-case
-			MTU Timings:      6827700.301000         145535892469.398010      381491.667628
-			Nanoseconds:      6827700.301000         145535892469.398010      381491.667628
-		NSOrderedSet indexOfObject: best-case
-			MTU Timings:      9274930.575000         346534601588.511108      588671.896381
-			Nanoseconds:      9274930.575000         346534601588.511108      588671.896381
-		NSArray indexOfObject: worst-case
-			MTU Timings: 152743756246.857147    90967073328678112.000000   301607482.216006
-			Nanoseconds: 152743756246.857147    90967073328678112.000000   301607482.216006
-		NSSet member: worst-case
-			MTU Timings:      6688784.768000         149610441400.884033      386795.089680
-			Nanoseconds:      6688784.768000         149610441400.884033      386795.089680
-		NSOrderedSet indexOfObject: worst-case
-			MTU Timings:      9081491.526000         357229775164.911316      597687.021078
-			Nanoseconds:      9081491.526000         357229775164.911316      597687.021078
+                           Mean                 Variance           Standard Deviation
+    NSMutableArray addObject:
+    NSMutableArray alloc/init addObject: best-case
+      MTU Timings:     4847526.243000         62658632290.536789        250317.063523
+      Nanoseconds:     4847526.243000         62658632290.536789        250317.063523
+    NSMutableArray alloc/init addObject: worst-case
+      MTU Timings:     6176854.339000        123803102772.761780        351856.650886
+      Nanoseconds:     6176854.339000        123803102772.761780        351856.650886
+    NSMutableArray alloc/initWithCapacity: addObject: best-case
+      MTU Timings:     4729664.386000         48374679306.886932        219942.445442
+      Nanoseconds:     4729664.386000         48374679306.886932        219942.445442
+    NSMutableArray alloc/initWithCapacity: addObject: worst-case
+      MTU Timings:     6035524.363000        167742585652.949799        409563.896911
+      Nanoseconds:     6035524.363000        167742585652.949799        409563.896911
+    NSMutableSet addObject:
+    NSMutableSet alloc/init addObject: best-case
+      MTU Timings:    33515276.151000        891687838330.846069        944292.242016
+      Nanoseconds:    33515276.151000        891687838330.846069        944292.242016
+    NSMutableSet alloc/init addObject: worst-case
+      MTU Timings:    37553785.610000       4907560137896.626953       2215301.365028
+      Nanoseconds:    37553785.610000       4907560137896.626953       2215301.365028
+    NSMutableSet alloc/initWithCapacity: addObject: best-case
+      MTU Timings:    12512076.514000        871029697535.791870        933289.717899
+      Nanoseconds:    12512076.514000        871029697535.791870        933289.717899
+    NSMutableSet alloc/initWithCapacity: addObject: worst-case
+      MTU Timings:    14663529.182000        404857157996.489258        636283.865894
+      Nanoseconds:    14663529.182000        404857157996.489258        636283.865894
+    NSMutableOrderedSet addObject:
+    NSMutableOrderedSet alloc/init addObject: best-case
+      MTU Timings:    42284630.265000      10604542558632.093750       3256461.662392
+      Nanoseconds:    42284630.265000      10604542558632.093750       3256461.662392
+    NSMutableOrderedSet alloc/init addObject: worst-case
+      MTU Timings:    51993559.652000      20662523337537.390625       4545604.837372
+      Nanoseconds:    51993559.652000      20662523337537.390625       4545604.837372
+    NSMutableOrderedSet alloc/initWithCapacity: addObject: best-case
+      MTU Timings:    43155027.548000       9237444561650.312500       3039316.462899
+      Nanoseconds:    43155027.548000       9237444561650.312500       3039316.462899
+    NSMutableOrderedSet alloc/initWithCapacity: addObject: worst-case
+      MTU Timings:    58213938.297000      47863129686067.648438       6918318.414620
+      Nanoseconds:    58213938.297000      47863129686067.648438       6918318.414620
+    NSArray containsObject:
+    NSArray containsObject: best-case
+      MTU Timings:   585747371.217001    7063213045002111.000000      84042923.824687
+      Nanoseconds:   585747371.217001    7063213045002111.000000      84042923.824687
+    NSArray containsObject: worst-case
+      MTU Timings:   738497402.965000   45538367800185216.000000     213397206.636322
+      Nanoseconds:   738497402.965000   45538367800185216.000000     213397206.636322
+    NSSet containsObject:
+    NSSet containsObject: best-case
+      MTU Timings:     8760600.238000         90721861479.100616        301200.699666
+      Nanoseconds:     8760600.238000         90721861479.100616        301200.699666
+    NSSet containsObject: worst-case
+      MTU Timings:     8989204.578000        142119504192.599640        376987.405881
+      Nanoseconds:     8989204.578000        142119504192.599640        376987.405881
+    NSOrderedSet containsObject:
+    NSOrderedSet containsObject: best-case
+      MTU Timings:    20035175.481000        262760636436.451233        512601.830309
+      Nanoseconds:    20035175.481000        262760636436.451233        512601.830309
+    NSOrderedSet containsObject: worst-case
+      MTU Timings:    20155129.499000        429527952862.425171        655383.821026
+      Nanoseconds:    20155129.499000        429527952862.425171        655383.821026
+    NSArray indexOfObject:
+    NSArray indexOfObject: best-case
+      MTU Timings:   616488576.723000     656483545668885.250000      25621934.854122
+      Nanoseconds:   616488576.723000     656483545668885.250000      25621934.854122
+    NSArray indexOfObject: worst-case
+      MTU Timings:   602683088.204001   52604815634637568.000000     229357397.165728
+      Nanoseconds:   602683088.204001   52604815634637568.000000     229357397.165728
+    NSSet member: 
+    NSSet member: best-case
+      MTU Timings:    14975366.089000       2485613258072.474609       1576582.778693
+      Nanoseconds:    14975366.089000       2485613258072.474609       1576582.778693
+    NSSet member: worst-case
+      MTU Timings:    15428009.029000       2856629839962.157715       1690156.750116
+      Nanoseconds:    15428009.029000       2856629839962.157715       1690156.750116
+    NSOrderedSet indexOfObject:
+    NSOrderedSet indexOfObject: best-case
+      MTU Timings:    22528021.750000       2321594311848.357422       1523677.889794
+      Nanoseconds:    22528021.750000       2321594311848.357422       1523677.889794
+    NSOrderedSet indexOfObject: worst-case
+      MTU Timings:    24049592.150000       1394929704424.166016       1181071.422237
+      Nanoseconds:    24049592.150000       1394929704424.166016       1181071.422237
+
 
 What is to be gained by this?
 
